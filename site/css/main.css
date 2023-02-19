@@ -1,0 +1,158 @@
+@import url(colors.css);
+
+body {
+  align-items: center;
+  background: var(--background-color);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 1em
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit
+}
+
+.greeting {
+  font-size: 5em;
+  padding: 0.7em;
+}
+
+.basmala {
+  padding-bottom: 3px;
+  word-spacing: 0.01px;
+  font-size: 23px
+}
+
+.salawat {
+    padding-bottom: 55px;
+    word-spacing: 0.01px;
+    font-size: 20px
+  }
+
+.search {
+  align-items: center;
+  background: var(--font-color);
+  border-radius: 2em;
+  display: flex;
+  height: 50px;
+  max-width: 500px;
+  padding: 0 15px 0 15px;
+  width: 80%
+}
+
+.search-icon {
+  height: 50%
+}
+
+.search-form {
+  display: flex;
+  height: 90%;
+  margin-left: 15px;
+  width: 90%
+}
+
+.tabs {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em
+}
+
+.tab {
+  align-items: center;
+  background: var(--background-color-secondary);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  max-width: 170px;
+  padding: 15px;
+  width: 100%;
+}
+
+.tab-title { font-size: 3em }
+
+.pfp {
+  border-radius: 50%;
+  width: 80%
+}
+
+.name {
+  font-size: 2em;
+  margin: 15px 0 0 0
+}
+
+.link { 
+  font-size: 2em;
+  transition: color 0.2s
+}
+
+.link:hover { color: #d9ff00 }
+
+.social { color: #ff00d0 }
+
+.media { color: blue }
+
+.tech { color: #ffaa00 }
+
+.edu { color: #ff3c00 }
+
+.islam { color: #356e03 }
+
+.weather {
+  align-items: center;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  max-width: unset;
+  width: auto
+}
+
+.weather-city { font-size: 1.5em }
+
+.weather-icon { padding-right: 15px }
+
+#q {
+  background: inherit;
+  border: none;
+  color: #202020;
+  font-size: 1.5em;
+  outline: none;
+  width: 100%
+}
+
+.greeting {
+  display: block;
+  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  text-align: center;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow {
+  0%{background-position:0 50%}
+  50%{background-position:100% 25%}
+  100%{background-position:0 50%}
+}
+
+/* for photo background uncomment this
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url('png here')
+}
+
+.tab {
+  backdrop-filter: blur(5px);
+  background: var(--background-color-secondary-transparent)
+}
+*/
